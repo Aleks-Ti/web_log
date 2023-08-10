@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Ой, кажется я упала!{% endblock %}
+{% block content %}
+  <h1 class="text-center">Добро пожаловать в небытие 404</h1>
+  <p class="text-center">Запрашиваемой страницы {{ path }} не существует</p>
+  <p class="text-center">платформа 9 и 3/4 где-то поблизости! Не упусти её!</p>
+  <marquee behavior="alternate" scrollamount="13">
+    <a href="{% url 'posts:index' %}">
+      <u>Платформа 9 и 3/4
+      </a>
+    </marquee>
+  {% endblock %}

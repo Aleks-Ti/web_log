@@ -1,0 +1,10 @@
+<ul>
+  <li>
+    Автор: {{ post.author.get_full_name }}
+    {% if author != request.user %}
+      <a class="colorDummy color special"
+         href="{% url 'posts:profile' author.username %}">#{{ post.author }}</a>
+    {% endif %}
+  </li>
+  <li>Дата публикации: {{ post.pub_date|date:"d E Y" }}</li>
+</ul>

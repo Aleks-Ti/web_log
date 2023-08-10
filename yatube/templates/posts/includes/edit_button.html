@@ -1,0 +1,6 @@
+{% if user == post.author %}
+    <button type="submit" class="btn btn-primary"
+    style="--bs-btn-padding-y: .15rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .60rem;">
+        <a class="nav-link active" href="{% url 'posts:post_edit' post.id %}">Изменить</a>
+    </button>
+{% endif %}

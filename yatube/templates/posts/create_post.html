@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}
+  {% if is_edit %}
+    Редактирование
+  {% else %}
+    Новый пост
+  {% endif %}
+{% endblock title %}
+{% block content %}
+  {% load thumbnail %}
+  <div class="row justify-content-center">
+    <div class="col-md-8 p-5">
+      <div class="card">
+        <div class="card-header">
+          {% if is_edit %}
+            <h1 class="text-center">Редактирование поста</h1>
+          {% else %}
+            <h1 class="text-center">Создание поста</h1>
+          {% endif %}
+          <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% for field in form %}{% endfor %}
+            {{ form.text }}
+            <br>
+            {{ form.group }}
+            <br>
+            {{ form.image }}
+            <br>
+            <span>{{ error }}</span>
+            <button type="submit" class="btn btn-primary">
+              {% if is_edit %}
+                Сохранить
+              {% else %}
+                Добавить
+              {% endif %}
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
