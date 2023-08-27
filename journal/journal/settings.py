@@ -76,7 +76,7 @@ MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
-ROOT_URLCONF = 'yatube.urls'
+ROOT_URLCONF = 'journal.urls'
 
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
@@ -97,7 +97,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'yatube.wsgi.application'
+WSGI_APPLICATION = 'journal.wsgi.application'
 
 DATABASES = {
     'default': {

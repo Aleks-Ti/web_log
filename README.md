@@ -33,7 +33,7 @@ pip install -r requirements.txt
 ### Start
 
 ```bash
-cd yatube/
+cd journal/
 ```
 
 ```bash

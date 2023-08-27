@@ -1,0 +1,89 @@
+a{
+  color: rgb(21, 7, 83);
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 0px;
+  letter-spacing: 1px;
+  margin: 0 0px;
+  font-size: 16px;
+  font-family: 'Fredoka One', cursive;
+  transition: .3s ease;
+}
+.color:hover {
+  transition: color 3s ease;
+  color: yellow;
+  font-size: 16.5px;
+  font-family: 'Fredoka One', cursive;
+}
+
+.colorDummy:hover {
+  color: rgb(182, 6, 192);
+}
+
+h5 h4, h1{
+  letter-spacing: 1px;
+  font-family: 'Fredoka One', cursive;
+}
+
+body {
+  background-color: Azure;
+}
+
+h6 {
+  color: #d52020;
+  letter-spacing: 1px;
+  font-family: 'Fredoka One', cursive;
+}
+
+
+form {
+  margin-left: 0%;
+  text-align: center;
+  margin-top: 35px;
+  width: auto;
+}
+
+div.page-container {
+  max-width: 75%;
+  min-width: 960px;
+  
+  padding: 0;
+  }
+
+div.page-container-inner {
+  min-width: 960px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+  }
+
+
+
+
+.special {
+    transform: rotateX(0) rotateY(-25deg);
+  text-align: auto;
+    color: #b9dfff;
+    color: #6acaf3;
+
+    text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #00FFFF,0 0 35px #228dff,0 0 40px #228dff;
+
+}
+
+.container {
+  align-items: stretch
+}
+article, header, aside, details, figcaption, figure, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
+embed,
+object,
+iframe {
+   width: 30%;
+   height: auto;
+}
+header {
+  width: auto;
+
+}

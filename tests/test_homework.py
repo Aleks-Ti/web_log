@@ -287,7 +287,7 @@ class TestCustomErrorPages:
         ), f'Убедитесь, что для несуществующих адресов страниц, сервер возвращает код {code}'
 
         try:
-            from yatube.urls import handler404 as handler404_student
+            from journal.urls import handler404 as handler404_student
         except ImportError:
             assert False, (
                 f'Убедитесь, что для страниц, возвращающих код {code}, '
@@ -299,7 +299,7 @@ class TestCustomErrorPages:
         code = 403
 
         try:
-            from yatube.urls import handler403
+            from journal.urls import handler403
         except ImportError:
             assert False, (
                 f'Убедитесь, что для страниц, возвращающих код {code}, '
